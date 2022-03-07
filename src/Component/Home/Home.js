@@ -1,4 +1,6 @@
 import React from "react";
+import GoogleSearch from "../GoogleSearch/GoogleSearch";
+import Quate from "../Quate/Quate";
 
 const Home = () => {
   var i = 0;
@@ -28,8 +30,12 @@ const Home = () => {
   var CurrentDate = new Date().toLocaleDateString(); // 11/16/2015
   return (
     <div className="test">
+      <div className="top-left">
+        <GoogleSearch></GoogleSearch>
+      </div>
+
       <diV className="centered">
-        <h1>Jahidul Islam</h1>
+        <Quate></Quate>
         <h1 style={{ fontSize: "34px" }}> {Time} </h1>
         <h2> {CurrentDate}</h2>
       </diV>
